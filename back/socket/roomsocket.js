@@ -136,8 +136,8 @@ export default (server) => {
         }
 
         dataFromMongo.forEach((temp) => {
-          socket.emit("chatload", chatEleCreater(temp));
           socket.emit("CliTimeReset", temp.createdAt);
+          socket.emit("chatload", chatEleCreater(temp));
         });
 
         dataFromMongo = [];

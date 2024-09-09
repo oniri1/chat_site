@@ -111,6 +111,7 @@
 
         //기존 옵저버 지우기
         lastroomObserver.unobserve(lastroom.target);
+        console.log("실행 종료");
       },
       { threshold: 0.3 }
     );
