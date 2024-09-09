@@ -7,7 +7,7 @@ export const upload = multer({
       console.log("1");
       //주소
       // /home/ubuntu/server
-      callback(null, "/var/www/chatProject/front/userFiles"); //절대 경로다.. 무조건 Root에서 시작함..
+      callback(null, "/var/www/oneChatSite/front/userFiles"); //절대 경로다.. 무조건 Root에서 시작함..
     },
 
     filename: (req, file, callback) => {
