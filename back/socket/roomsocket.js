@@ -51,7 +51,7 @@ const chatEleCreater = (data) => {
 export default (server) => {
   const io = new Server(server, {
     cors: { origin: "http://localhost" },
-    path: "/chatProject/socket.io", //router를 자동으로 생성, client의 src = 랑 주소가 맞아야 한다. http://localhost:3010/api/socket.io , 클라이언트 js와도 맞아야 함 ":3010/api/socket.io"
+    path: "/chatProject/chatProject/socket.io", //router를 자동으로 생성, client의 src = 랑 주소가 맞아야 한다. http://localhost:3010/api/socket.io , 클라이언트 js와도 맞아야 함 ":3010/api/socket.io"
   });
 
   console.log("등록");
