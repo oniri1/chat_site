@@ -42,7 +42,7 @@
     //소켓 통신
     let time = Date.now();
 
-    const socket = io(`wss://main.oniri1.com/room${roomIdStr}`, {
+    const socket = io(`${roomIdStr}`, {
       path: "/chatProject/socket.io/room",
     }); // chat 네임스페이스
 
