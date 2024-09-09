@@ -42,8 +42,8 @@
     //소켓 통신
     let time = Date.now();
 
-    const socket = io(`${roomIdStr}`, {
-      path: "/socket.io/room",
+    const socket = io(`/${roomIdStr}`, {
+      path: "/chatProject/socket.io/room",
     }); // chat 네임스페이스
 
     //보낼 때
