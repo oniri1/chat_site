@@ -1,0 +1,49 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./comment.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="board">
+        <div class="background-img"></div>
+        <div class="container z-0">
+          <div class="body">
+            <div class="list-box">
+              <div class="item">
+                <div id="userInfo" class="header">
+                  <h2>작성자 : </h2>
+                </div>
+                <!-- 이미지 공간 -->
+                <div id="imgElem" class="content">
+                  <!-- <img src="../img/colosseum-sketch-with-pencil.jpeg" alt="" /> -->
+                </div>
+
+              </div>
+              <div class="comment-box">
+
+                <form method="post" id="send" action="">
+                  <textarea name="content" id="content" placeholder="싸움걸기"></textarea>
+
+                  <button id="fight">반박하기</button>
+
+                </form>
+                <!-- 댓글 창 관련 -->
+                <div class="comment-list">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../env.js"></script>
+    <script src="./index.js"></script>
+
+  </body>
+</html>

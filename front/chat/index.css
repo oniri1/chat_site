@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  background-color: #ebeef1;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.z-0 {
+  position: relative;
+  z-index: 2;
+}
+
+.board {
+  position: relative;
+}
+
+.board .background-img {
+  position: absolute;
+  background: url("../img/fighting-gladiator-in-colosseum.jpeg");
+  width: 100%;
+  height: 150%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.board .background-img::before {
+  content: "";
+  background-color: rgb(0, 0, 05);
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.5;
+}
+
+.board .body {
+  display: flex;
+  gap: 1rem;
+}
+
+.board .body .list-box {
+  flex: 1;
+  opacity: 0.9;
+}
+
+.board .body .list-box .item {
+  background-color: white;
+}
+
+.board .body .list-box .item .header {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #ebeef1;
+}
+
+.board .body .list-box .item .header h2 {
+  margin: 0;
+  word-break: break-all;
+}
+
+.board .body .list-box .item .content {
+  border: 1px solid #ebeef1;
+  border-top: none;
+  padding: 1.5rem;
+}
+
+.board .body .list-box .item .content img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.board .body .list-box .comment-box {
+  background-color: white;
+  margin-top: 0.5rem;
+  border: 1px solid #ebeef1;
+}
+
+.board .body .list-box .comment-box form {
+  padding: 1rem;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.board .body .list-box .comment-box form textarea {
+  width: 100%;
+  height: 5rem;
+  resize: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.board .body .list-box .comment-box .comment-list .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+}
+
+.board .body .list-box .comment-box button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.board .body .menu #user-info .user-level {
+  display: flex;
+}
+
+.board .body .menu #user-info .user-level .level-img {
+  width: 4rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.board .body .menu #user-info .user-level .name-level {
+  flex: 1;
+}
+
+.board .body .menu #user-info .user-level .name-level .user-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.board .body .menu #user-info .user-level .name-level .user-now-level {
+  color: #46cfa7;
+}
+
+.board .body .menu #user-info .user-level .name-level .user-level-bar {
+  background-color: rgb(201, 198, 198);
+  height: 0.5rem;
+  margin: 0.2rem 0;
+  border-radius: 0.5rem;
+}
+
+.board .body .menu #user-info .user-level .name-level .next-level {
+  color: rgb(201, 198, 198);
+  text-align: end;
+}
+
+.board .body .menu #user-info .user-menu .user-write-comment {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.board .body .menu #user-info .user-menu .user-write-comment div {
+  width: 48%;
+}
+
+.board .body .menu #user-info .user-menu .user-write-comment button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: 46cfa7;
+  border: 1px solid #46cfa7;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.board .body .menu #user-info .user-menu .user-ward-write {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.board .body .menu #user-info .user-menu .user-ward-write div {
+  width: 48%;
+}
+
+.board .body .menu #user-info .user-menu .user-ward-write button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: 46cfa7;
+  border: 1px solid #46cfa7;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.board .body .menu #user-info .user-menu .user-ward-write .user-write button {
+  padding: 0.5rem 1rem;
+  background-color: #46cfa7;
+  color: white;
+  border: 1px solid #46cfa7;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.board .body .menu #user-info .user-menu .user-link button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #46cfa7;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    max-width: 1050px;
+  }
+}

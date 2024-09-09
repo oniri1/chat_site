@@ -1,0 +1,65 @@
+/* .z-1 {
+  position: relative;
+  z-index: 1;
+} */
+
+.body {
+  display: none;
+  position: fixed;
+  top: 80px;
+  z-index: 3;
+  /* display: flex; */
+  gap: 1rem;
+}
+
+.body .list-box {
+  flex: 1;
+}
+
+.body .list-box .write {
+  background-color: white;
+  padding: 1rem;
+}
+
+.body .list-box .write > * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.body .list-box .write > :last-child {
+  margin-bottom: 0;
+}
+
+.body .list-box .write select,
+.body .list-box .write input {
+  padding: 0.5rem;
+  border: 1px solid #c5cbd0;
+}
+
+.body .list-box .write input {
+  width: 100%;
+}
+
+.body .list-box .btns {
+  display: flex;
+  justify-content: space-between;
+}
+.body .list-box .btns button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.body .list-box .btns .cancle {
+  background-color: white;
+  border: 1px solid #c5cbd0;
+  color: #7b858e;
+}
+
+.body .list-box .btns .cancle {
+  background-color: #46cfa7;
+  border: none;
+  color: white;
+}

@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  padding-left: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+.logo a {
+  color: white;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background-color: #fefefe;
+}
+
+.tabs {
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  display: flex;
+}
+
+.tabs__sidebar {
+  width: 15%;
+  height: 100%;
+  flex-shrink: 0;
+  background: #cccccc;
+}
+
+.tabs__button {
+  display: block;
+  padding: 10px;
+  background: #eeeeee;
+  border: none;
+  height: 30px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.tabs__button:active {
+  background: #dddddd;
+}
+
+.tabs__button:not(:last-of-type) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.tabs__button--active {
+  font-weight: bold;
+  border-right: 2px solid #009879;
+  background: #dddddd;
+}
+
+.tabs__content {
+  padding: 15px;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.tab_content {
+  margin-left: 3%;
+  clear: both;
+  display: block;
+}
+
+.room-container {
+  display: inline-flex;
+}
+
+.box {
+  display: inline-flex;
+}
+
+.room {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+  /* background: url(./img/FightGladiator.jpeg) no-repeat center bottom; */
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  background: black;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.title p {
+  display: inline-flex;
+  float: right;
+  padding-right: 10px;
+}
+
+.bgi {
+  margin-top: 2.5px;
+  display: inline-flex;
+  width: 40%;
+  height: 160px;
+  /* border: 1px solid black; */
+  background: url(../img/FightGladiator.jpeg) no-repeat center center;
+  background-size: cover;
+  border: 1px solid azure;
+  border-radius: 5px;
+}
+
+.status {
+  width: 60%;
+  height: 160px;
+  float: right;
+  /* border: 1px solid black; */
+}
+
+.tag {
+  height: 50px;
+  background: gray;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  /* align-items: center; */
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.host {
+  height: 50px;
+  background: lightgray;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.enter {
+  width: 240px;
+  height: 30px;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  /* font-weight: bold; */
+  color: white;
+  cursor: pointer;
+}
+
+.delete {
+  width: 240px;
+  height: 30px;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  /* font-weight: bold; */
+  color: white;
+  cursor: pointer;
+}
+
+.tabs__content h2 {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.tabs__content p {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.tabs__content a {
+  color: black;
+  display: block;
+  margin: 1px 0px;
+}
+
+.list_container {
+  display: inline-block;
+  margin-left: 40px;
+  margin: 5px;
+  padding: 5px;
+  max-width: 260px;
+  height: 100%;
+  border: solid 1px black;
+}
+#commentTap {
+  width: 100%;
+}
+#commentTap form {
+  max-width: 260px;
+}
+
+.form_case {
+  padding-left: 50px;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+.tabs__content > :first-child {
+  margin-top: 0;
+}
+
+.input_style > input {
+  margin: 10px;
+  width: 250px;
+}
+
+.footer {
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.footer a {
+  color: black;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 450px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}

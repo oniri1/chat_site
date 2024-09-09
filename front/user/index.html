@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./mypage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./cookiechecker.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">Colosseum</a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar" id="user-info">
+        <ul>
+          <li>
+            <a href="/regist" class="">회원가입</a>
+          </li>
+
+          <li>
+            <a href="/login" class="">로그인</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="tabs">
+      <div class="tabs__sidebar">
+        <button class="tabs__button" data-for-tab="1">내 채팅방</button>
+        <button class="tabs__button" data-for-tab="2">내 댓글</button>
+        <button class="tabs__button" data-for-tab="3">닉네임 변경</button>
+        <button class="tabs__button" data-for-tab="4">비밀번호 변경</button>
+        <button class="tabs__button" data-for-tab="5">회원탈퇴</button>
+      </div>
+      <div class="tabs__content" data-tab="1" id="tab1">
+        <h2>내 채팅방</h2>
+        <p>참여중인 채팅방 목록</p>
+        <!-- 채팅방 -->
+      </div>
+      <div class="tabs__content" data-tab="2" id="commentTap">
+        <h2>내 댓글</h2>
+        <p>작성한 댓글 목록</p>
+        <!-- 내 댓글 -->
+      </div>
+      <!--  -->
+      <div class="tabs__content" data-tab="3">
+        <h2>닉네임 변경</h2>
+        <p>닉네임변경하기</p>
+        <div action="" class="form_case">
+
+          <div class="input_style">
+            <input id="nickInput" type="text" placeholder="변경할 닉네임을 입력해주세요." />
+            <button id="nickBtn">이름 변경</button>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content" data-tab="4">
+        <h2>비밀번호 변경</h2>
+        <p>비밀번호 변경하기</p>
+        <div class="form_case">
+          <div class="input_style">
+            <input id="pwInput" type="password" placeholder="변경할 비밀번호를 다시확인해주세요." />
+            <button id="pwBtn">비밀번호 변경</button>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__content" data-tab="5">
+        <h2>회원탈퇴</h2>
+        <div class="form_case">
+          <div class="input_style">
+            <button id="killBtn">회원탈퇴하기</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="./"> 이용약관</a>
+      <a href="./">개인정보처리방침</a>
+    </footer>
+    <script src="../env.js"></script>
+    <script src="./mapage.js"></script>
+
+  </body>
+</html>

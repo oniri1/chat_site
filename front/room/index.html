@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="forOb" class="user-container">
+      <h2 for="nickname">방 제목 : </h2>
+    </div>
+    <div id="scrollId" class="display-container">
+      <ul id="chats" class="chatting-list">
+
+      </ul>
+    </div>
+    <div class="input-container">
+      <span>
+        <form id="chatDatasForm" method="post" enctype="multipart/form-data">
+          <input type="file" class="img-btn" id="imgInputer" name="img" accept="image/*" />
+        </form>
+        <input type="text" name="talk" id="talk" class="chatting-input" />
+        <button id="sendBtn" class="send-button">전송</button>
+        <!-- <button id="loadBtn">불러오기</button> -->
+      </span>
+
+    </div>
+  </div>
+  <script src="../env.js"></script>
+  <script src="/chatProject/socket.io/socket.io.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

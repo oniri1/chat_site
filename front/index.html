@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./makeroom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="./obServer.js" defer></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">Colosseum</a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar" id="user-info">
+        <ul>
+          <li>
+            <a href="/regist" class="">회원가입</a>
+          </li>
+
+          <li>
+            <a href="/login" class="">로그인</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="search">
+        <form id="searchs" class="box" action="">
+          <input id="searchValue" type="text" placeholder="검색할 내용을 입력해주세요." style="flex: 1" />
+          <input id="searchBtn" type="submit" value="채팅방 찾기" />
+        </form>
+      </div>
+      <div id="today-issue">
+        <div id="isuue-rooms" class="issue">
+          <fieldset>
+            <legend>오늘의 화제 채팅방</legend>
+            <a href="">
+              <li class="li-style"></li>
+            </a>
+          </fieldset>
+        </div>
+        <div id="issue-replys" class="issue">
+          <fieldset>
+            <legend>오늘의 화제 댓글</legend>
+            <a href="">
+              <li class="li-style2"></li>
+            </a>
+          </fieldset>
+        </div>
+      </div>
+      <div class="tab_content" id="tab_content">
+        <input type="radio" name="tabmenu" id="tab01" checked />
+        <label for="tab01">전체</label>
+        <input type="radio" name="tabmenu" id="tab02" />
+        <label for="tab02">찬반토론</label>
+        <input type="radio" name="tabmenu" id="tab03" />
+        <label for="tab03">정보공유</label>
+        <input type="radio" name="tabmenu" id="tab04" />
+        <label for="tab04">친목수다</label>
+        <div id="makeBtn"></div>
+
+        <div class="room-container con1" id="roomShower">
+          <!-- <a href="../room/?roomId=1" class="room">
+            <div class="title">콜로세움에 어서오세요!!</div>
+            <div class="tag">공지사항</div>
+          </a> -->
+          <div class="box">
+            <div class="room">
+              <div class="title">콜로세움에 어서오세요!</div>
+              <div>
+                <div class="bgi"></div>
+                <div class="status">
+                  <div class="tag"># 공지사항</div>
+                  <div class="host">존재를부정하는씹상남자관리자
+                  </div>
+                  <button class="enter">공지를 하는건 나약하다.</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 룸 만들기 -->
+    <div class="body">
+      <div class="list-box">
+        <form id="makeRoomForm" action="" class="write">
+          <h3>게시글 작성</h3>
+          <select name="category" id="category"></select>
+          <input id="roomTitle" type="text" name="title" placeholder="방 제목을 입력해주세요." />
+
+          <div class="icons"></div>
+          <div class="btns">
+            <button id="cancle" class="cancle">취소</button>
+            <button id="submit" class="submit">작성 완료</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./env.js"></script>
+    <script src="./obServer.js"></script>
+    <script src="./index.js"></script>
+    <script src="./makeroom.js"></script>
+
+
+    <!-- <script src="./clicker.js"></script> -->
+  </body>
+</html>
