@@ -24,7 +24,7 @@ const chatEleCreater = (data) => {
 
   if (data.fileName == null) {
     return `
-    <a href="/chat/?chatId=${data._id}"><li class="received">
+    <a href="/chatSite/chat/?chatId=${data._id}"><li class="received">
       <span class="profile">
         <span class="user">${data.name}</span>
         <img class="image" src="../img/two-bleeding-gladiator-fight-in-colosseum-with-many-audience.jpeg" alt="" />
@@ -34,7 +34,7 @@ const chatEleCreater = (data) => {
     </li></a>`;
   } else {
     return `
-    <a href="/chat/?chatId=${data._id}"><li class="received">
+    <a href="/chatSite/chat/?chatId=${data._id}"><li class="received">
       <span class="profile">
         <span class="user">${data.name}</span>
         <img class="image" src="../img/two-bleeding-gladiator-fight-in-colosseum-with-many-audience.jpeg" alt="" />

@@ -17,13 +17,13 @@ const makeElem = document.getElementById("makeBtn");
       userinfoElem.innerHTML = `<ul>
 
     <li>
-      <a href="/user" class="">마이페이지</a>
+      <a href="/chatSite/user" class="">마이페이지</a>
     </li>
     <li>
-        <a href="/user" class="">${user.user}님</a>
+        <a href="/chatSite/user" class="">${user.user}님</a>
     </li>
     <li>
-      <a href="/logout" class="">로그아웃</a>
+      <a href="/chatSite/logout" class="">로그아웃</a>
     </li>
   </ul>`;
     }

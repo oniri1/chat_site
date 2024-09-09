@@ -218,7 +218,7 @@
         <div class="status">
           <div class="tag"># ${tagName}</div>
           <div class="host">태그(업데이트 예정)</div>
-          <a href="/room/?roomId=${roomId}"><button class="enter">입장하기</button></a>
+          <a href="/chatSite/room/?roomId=${roomId}"><button class="enter">입장하기</button></a>
         </div>
       </div>
     </div>
@@ -241,7 +241,7 @@
       if (tag == "2") tagName = "정보공유";
       if (tag == "3") tagName = "친목수다";
 
-      const HotTopic = `<a href="/room/?roomId=${roomId}"><li class="li-style">${tagName} ${title}</li></a>`;
+      const HotTopic = `<a href="/chatSite/room/?roomId=${roomId}"><li class="li-style">${tagName} ${title}</li></a>`;
       li_style.innerHTML += HotTopic;
     };
 
@@ -256,7 +256,7 @@
     const recommentHotTopic = (data) => {
       const { chatId, chat, userName } = data;
 
-      const reHotTopic = `<a href="/chat/?chatId=${chatId}"><li class="li-style2">${userName} -${chat}</li></a>`;
+      const reHotTopic = `<a href="/chatSite/chat/?chatId=${chatId}"><li class="li-style2">${userName} -${chat}</li></a>`;
       li_style2.innerHTML += reHotTopic;
     };
 

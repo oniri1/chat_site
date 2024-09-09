@@ -63,13 +63,13 @@ const userinfoElem = document.getElementById("user-info");
   if (user.user) {
     userinfoElem.innerHTML = `<ul>
     <li>
-      <a href="/" class="">메인 페이지</a>
+      <a href="/chatSite" class="">메인 페이지</a>
     </li>
     <li>
         <a href="./" class="">${user.user}</a>
     </li>
     <li>
-      <a href="/logout" class="">로그아웃</a>
+      <a href="/chatSite/logout" class="">로그아웃</a>
     </li>
   </ul>`;
   }
@@ -99,7 +99,7 @@ const loadNewRoom = (data) => {
           <div class="tag"># ${tagName}</div>
           <div class="host">태그 (업데이트 예정)</div>
 
-          <a href="/room/?roomId=${id}"><button type="button" class="enter">입장하기</button></a>
+          <a href="/chatSite/room/?roomId=${id}"><button type="button" class="enter">입장하기</button></a>
           <button class="delete">삭제하기</button>
         </div>
       </div>
@@ -144,7 +144,7 @@ const loadNewRoom = (data) => {
     <div class="list_container">
         내용 : ${content}
 
-          <a href="/chat/?chatId=${chatId}"><button type="button" class="enter">입장하기</button></a>
+          <a href="/chatSite/chat/?chatId=${chatId}"><button type="button" class="enter">입장하기</button></a>
           <button class="delete">삭제하기</button>
       
       </div>
