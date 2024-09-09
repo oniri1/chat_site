@@ -54,7 +54,6 @@ export default (server) => {
     path: "/socket.io", //router를 자동으로 생성, client의 src = 랑 주소가 맞아야 한다. http://localhost:3010/api/socket.io , 클라이언트 js와도 맞아야 함 ":3010/api/socket.io"
   });
 
-  console.log("등록");
   // 네임스페이스 등록
   const room = io.of("/room");
 
