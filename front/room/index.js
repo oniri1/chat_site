@@ -35,8 +35,6 @@
       const timer = setTimeout(() => {
         location.href = location.href;
       }, 500);
-
-      // timer();
     }
     document.getElementById("forOb");
     const roomId = roomData.roomId;
@@ -44,7 +42,7 @@
     //소켓 통신
     let time = Date.now();
 
-    const socket = io(`/room${roomIdStr}`, {
+    const socket = io(`/room/room${roomIdStr}`, {
       path: "/chatProject/chatProject/socket.io",
     }); // chat 네임스페이스
 
@@ -84,9 +82,6 @@
     });
 
     socket.on("chatload", (data) => {
-      // const ele = document.createElement("div")
-      // ele.innerText = data;
-
       document.getElementById("chats").innerHTML =
         data + document.getElementById("chats").innerHTML;
 
