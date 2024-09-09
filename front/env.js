@@ -1,1 +1,1 @@
-const serverport = "http://localhost:3010";
+const serverport = "/chatProject";
