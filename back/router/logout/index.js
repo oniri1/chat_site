@@ -10,7 +10,7 @@ router.post("/", (req, res) => {
   // });
 
   res.clearCookie("user");
-  res.json({ redirect: "/" });
+  res.json({ redirect: "/chatSite" });
 });
 
 export default router;

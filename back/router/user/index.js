@@ -18,7 +18,7 @@ router.post("/kill", async (req, res) => {
       where: { nickname: req.signedCookies.user }, //소프트 삭제
     });
     res.clearCookie("user");
-    res.json({ redirect: "/" });
+    res.json({ redirect: "/chatSite" });
   } catch (err) {
     console.log(err);
     res.json({ error: err.message });

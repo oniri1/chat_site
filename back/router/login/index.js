@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
         // path: "/",
       });
       res.clearCookie("ghost");
-      res.json({ redirect: "/" });
+      res.json({ redirect: "/chatSite" });
     } else {
       throw new Error("not match password");
     }

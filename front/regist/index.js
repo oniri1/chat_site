@@ -80,19 +80,3 @@ registForm.onsubmit = async (e) => {
     console.log(err);
   }
 };
-
-// xhr.onload = () => {
-//   if (xhr.status == 200) {
-//     alert("성공!");
-//     location.href = "/login";
-//   } else if (xhr.status == 400) {
-//     alert("비밀번호 확인해!");
-//     // 권한 문제로 거절
-//   } else if (xhr.status == 409) {
-//     alert("중복됐어");
-//     // 기존 서버 정보와 충돌
-//   } else {
-//     alert("알 수 없는 오류 발생");
-//   }
-// };
-// };

@@ -115,7 +115,7 @@ router.post("/make", async (req, res) => {
         tag: req.body.tag,
       });
 
-      res.json({ redirect: `/room/?roomId=${roomCreate.id}` });
+      res.json({ redirect: `/chatSite/room/?roomId=${roomCreate.id}` });
     }
   } catch (err) {
     console.log(err);

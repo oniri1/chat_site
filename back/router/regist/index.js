@@ -17,7 +17,7 @@ router.post("/", async (req, res) => {
         password: hasher(pw),
         nickname: name,
       });
-      res.json({ redirect: "/login" });
+      res.json({ redirect: "/chatSite/login" });
     }
   } catch (err) {
     console.error(err);

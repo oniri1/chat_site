@@ -22,7 +22,7 @@ router.post("/name", async (req, res) => {
       signed: true,
     });
 
-    res.json({ redirect: "/" });
+    res.json({ redirect: "/chatSite" });
   } catch (err) {
     console.log(err);
     res.json({ error: "someone has this name" });
@@ -40,7 +40,7 @@ router.post("/pw", async (req, res) => {
       }
     );
 
-    res.json({ redirect: "/" });
+    res.json({ redirect: "/chatSite" });
   } catch (err) {
     console.log(err);
   }

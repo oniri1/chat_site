@@ -9,7 +9,7 @@
     console.log("check", check.data);
 
     if (check.data.user != undefined) {
-      location.href = "/";
+      location.href = "/chatSite";
     }
   } catch (err) {}
 })();
