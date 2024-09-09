@@ -42,8 +42,8 @@
     //소켓 통신
     let time = Date.now();
 
-    const socket = io(`/${roomIdStr}`, {
-      path: "/chatProject/socket.io/room",
+    const socket = io(`/room${roomIdStr}`, {
+      path: "/chatProject/socket.io",
     }); // chat 네임스페이스
 
     //보낼 때
@@ -111,7 +111,6 @@
 
         //기존 옵저버 지우기
         lastroomObserver.unobserve(lastroom.target);
-        console.log("실행 종료");
       },
       { threshold: 0.3 }
     );
